@@ -104,6 +104,10 @@ public class RuneLite
 {
 	public static final File RUNELITE_DIR = new File(System.getProperty("user.home"), ".runelite");
 	public static final File CACHE_DIR = new File(RUNELITE_DIR, "cache");
+	// Namespaced subdirectory for our own plugin artifacts within the shared cache dir,
+	// mirroring how Kuri caches its plugin jars under cache/k - keeps us from colliding
+	// with the standard Plugin Hub cache or any other client's plugin cache.
+	public static final File PELLI_PLUGIN_CACHE_DIR = new File(CACHE_DIR, "p");
 	public static final File PLUGINS_DIR = new File(RUNELITE_DIR, "plugins");
 	public static final File SCREENSHOT_DIR = new File(RUNELITE_DIR, "screenshots");
 	public static final File LOGS_DIR = new File(RUNELITE_DIR, "logs");
