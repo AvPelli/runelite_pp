@@ -128,6 +128,9 @@ public class RuneLite
 	private ExternalPluginManager externalPluginManager;
 
 	@Inject
+	private net.runelite.client.pelliplugins.PelliPluginManager pelliPluginManager;
+
+	@Inject
 	private EventBus eventBus;
 
 	@Inject
@@ -328,6 +331,7 @@ public class RuneLite
 		pluginManager.loadCorePlugins();
 		pluginManager.loadSideLoadPlugins();
 		externalPluginManager.loadExternalPlugins();
+		pelliPluginManager.loadPelliPlugins();
 
 		SplashScreen.stage(.70, null, "Finalizing configuration");
 
