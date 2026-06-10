@@ -5,11 +5,11 @@ import lombok.Data;
 @Data
 class PelliPluginManifest
 {
-	/** Human-readable display name, e.g. "Pelli Hello World". */
+	/** Human-readable display name, e.g. "Pelli Plugin Manager". */
 	private String name;
 	/** Semver string shown in the config panel. */
 	private String version;
-	/** Filename of the JAR as stored in cache/p/ and served from /files/. */
+	/** Filename of the JAR as stored in cache/p/ and served from /files/plugins/. */
 	private String fileName;
 	/** SHA-256 hex of the JAR (lowercase). Used for cache validation. */
 	private String hash;

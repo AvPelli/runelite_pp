@@ -28,7 +28,7 @@ import okhttp3.Response;
 public class PelliPluginManager
 {
 	private static final String MANIFEST_URL = "https://api.pelliplugins.com/client-api/v1/pelli-plugins.json";
-	private static final String FILES_BASE_URL = "https://api.pelliplugins.com/files/";
+	private static final String FILES_BASE_URL = "https://api.pelliplugins.com/files/plugins/";
 
 	private final PluginManager pluginManager;
 	private final OkHttpClient okHttpClient;
